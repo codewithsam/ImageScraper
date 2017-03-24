@@ -24,13 +24,16 @@ mongoose.connect('mongodb://codewithsam:qazwsxedc@ds141490.mlab.com:41490/images
 //     console.log('Payload saved successfully!');
 // });
 
-app.use(bodyParser.json());
-app.use(express.static(__dirname + '/public'));
-app.set('view engine', 'ejs');
-
-app.use(routes);
-
-http.createServer(app).listen(2000);
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+
+app.use(routes);
+
+
+app.use(express.static(__dirname + '/public'));
+app.set('view engine', 'ejs');
+
+
+
+http.createServer(app).listen(2000);
