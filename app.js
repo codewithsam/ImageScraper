@@ -22,4 +22,4 @@ app.set('view engine', 'ejs');
 
 
 
-http.createServer(app).listen(app.get('port'));
+app.listen(app.get('port'));
