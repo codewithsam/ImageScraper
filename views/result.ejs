@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <% if(typeof data !== "undefined"){ %>
+
+    <h3>RESULT: </h3>
+    <ul class="gallery">
+        <% data.forEach(function(doc){%>
+            <li>
+                <img src= "../<%= doc %>" />
+            </li>
+            <%})%>
+    </ul>
+
+
+
+
+    <% } else{ %>
+    <h1>Nothing found!!</h1>
+
+   <% }%>
+    </body>
+</html>

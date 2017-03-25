@@ -57,3 +57,53 @@ body {
     color: #777;
     transform: scale(1.2);
 }
+.gallery{
+    margin: 0;
+    padding: 0;
+}
+.gallery > li{
+    width: 100px;
+    height:100px;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.gallery>li>img{
+    width: 100px;
+    height: 100px;
+}
+.keywordlink{
+
+}
+.keywordlink > li{
+    padding:5px 10px;
+}
+.keywordlink > li>a{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu{
+    background-color:#666;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: #FFF;
+}
+.menu>ul>a{
+    text-decoration: none;
+    color: #FFF;
+    
+}
+.menu > ul>a>li{
+    text-align: center;
+    display: inline-block;
+    margin-left: 30px;
+    height: 60px;
+    padding-top: 12px;
+    cursor: pointer;
+    font-size: 24px;
+}
+.menu>ul>a>li:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}

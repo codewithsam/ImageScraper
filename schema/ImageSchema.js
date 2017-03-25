@@ -1,16 +1,10 @@
 const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
-let ImageTypes = {
-    original: String,
-    small: String,
-    medium: String,
-    greyscale: String
-}
 
 let imageSchema = new Schema({
     payload: String,
-    items: [ImageTypes],
+    items: [],
     created_at: {
         type: Date,
         default: Date.now
