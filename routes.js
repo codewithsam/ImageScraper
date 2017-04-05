@@ -5,7 +5,6 @@ const fs = require('fs');
 let ImageDB = require('./schema/ImageSchema');
 
 
-
 function guid() {
     function s4() {
         return Math.floor((1 + Math.random()) * 0x10000)
@@ -33,7 +32,7 @@ router.get('/keywords/:payload', (req,res,next)=>{
     }, (err, result) => {
         if (err) console.log("error");
         else{
-            res.render('result', {data: result[0].items});
+            res.render('result', {data: result[0].items, path: __dirname});
         }
     });
 });

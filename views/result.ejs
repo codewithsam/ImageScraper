@@ -13,7 +13,8 @@
     <ul class="gallery">
         <% data.forEach(function(doc){%>
             <li>
-                <img src= "../<%= doc %>" />
+            <% let c = doc.slice(1); %>
+                <img src= "<%= c %>" />
             </li>
             <%})%>
     </ul>
